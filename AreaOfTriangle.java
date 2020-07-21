@@ -12,7 +12,9 @@ public class AreaOfTriangle {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-
+		
+		System.out.println("This program calculates the aread of a triangle.");
+		
 		System.out.print("Please, enter A side of a triangle: ");
 		double a = sc.nextDouble();
 
@@ -24,13 +26,9 @@ public class AreaOfTriangle {
 		
 		double p = (a + b + c) / 2;
 
-//		double triangleArea = Math.sqrt(p * (p - a) * (p - b) * (p - c));
+		double triangleArea = Math.sqrt(p * (p - a) * (p - b) * (p - c));
 		
-		System.out.println("Triangle area is: " 
-			+ (( a>0 && b>0 && c >0) 
-				? Math.sqrt(p * (p - a) * (p - b) * (p - c))
-				: "NaN"
-			));
+		System.out.println("Triangle area is: " + triangleArea); 
 	}
 
 }
